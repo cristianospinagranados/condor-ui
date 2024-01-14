@@ -1,0 +1,16 @@
+---
+interface Props {
+}
+
+const {  } = Astro.props;
+---
+
+<button class="link-card">
+	<slot />
+</button>
+<style>
+	button:is(:hover, :focus-within) {
+		background-position: 0;
+		background-image: var(--accent-gradient);
+	}
+</style>
